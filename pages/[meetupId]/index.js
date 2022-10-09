@@ -57,16 +57,14 @@ export async function getStaticProps(context) {
 
   client.close();
 
-  console.log(meetupId);
-
   return {
     props: {
       meetupData: {
         id: selectedMeetup._id.toString(),
         title: selectedMeetup.title,
         image: selectedMeetup.image,
-        description: selectedMeetup.description,
         address: selectedMeetup.address,
+        description: selectedMeetup.description,
       },
     },
   };

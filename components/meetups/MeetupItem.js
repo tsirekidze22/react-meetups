@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import classes from "./MeetupItem.module.css";
 
 function MeetupItem(props) {
+
   const router = useRouter();
 
   const showDetailsPage = () => {
@@ -18,6 +19,7 @@ function MeetupItem(props) {
         <div className={classes.content}>
           <h3>{props.title}</h3>
           <address>{props.address}</address>
+          <p>{props.description}</p>
         </div>
         <div className={classes.actions}>
           <button onClick={showDetailsPage}>Show Details</button>
