@@ -1,5 +1,5 @@
 import Head from "next/head";
-import NewMeetupForm from "../../components/meetups/NewMeetupForm";
+import NewMeetupForm from "../../components/meetups/NewMeetupForm.js";
 import { useRouter } from "next/router";
 
 const NewMeetup = () => {

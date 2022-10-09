@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { MongoClient, ObjectId } from "mongodb";
-import MeetupDetail from "../../components/meetups/MeetupDetail";
+import MeetupDetail from "../../components/meetups/MeetupDetail.js";
 
 const MeetupDetails = ({ meetupData }) => {
   return (
